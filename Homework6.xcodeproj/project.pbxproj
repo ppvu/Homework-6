@@ -22,6 +22,8 @@
 		FEBD048125E2A4BD00511BFF /* CoreImage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD047F25E2A4BD00511BFF /* CoreImage+CoreDataProperties.swift */; };
 		FEBD049225E2A69300511BFF /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD049025E2A69300511BFF /* ImagesViewController.swift */; };
 		FEBD049325E2A69300511BFF /* ImagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEBD049125E2A69300511BFF /* ImagesViewController.xib */; };
+		FEBD049A25E2CC3900511BFF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD049925E2CC3900511BFF /* CoreDataStack.swift */; };
+		FEBD049D25E2CC9900511BFF /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD049C25E2CC9900511BFF /* Factory.swift */; };
 		FEDAFEEA25DFCC2600A3641A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDAFEE925DFCC2600A3641A /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		FEBD047F25E2A4BD00511BFF /* CoreImage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreImage+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FEBD049025E2A69300511BFF /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
 		FEBD049125E2A69300511BFF /* ImagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesViewController.xib; sourceTree = "<group>"; };
+		FEBD049925E2CC3900511BFF /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		FEBD049C25E2CC9900511BFF /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		FEDAFEE925DFCC2600A3641A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -96,6 +100,8 @@
 		FEBD048425E2A52D00511BFF /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FEBD04A125E2CD5400511BFF /* Factory */,
+				FEBD04A025E2CD4900511BFF /* Stack */,
 				FEBD048625E2A59000511BFF /* Entities */,
 			);
 			path = CoreData;
@@ -113,12 +119,36 @@
 		FEBD048725E2A5F100511BFF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FEBD049025E2A69300511BFF /* ImagesViewController.swift */,
-				FEBD049125E2A69300511BFF /* ImagesViewController.xib */,
+				FEBD04A325E2CDBC00511BFF /* ImageViewController */,
 				FE92B9C925DD32680060C574 /* LoginViewController.swift */,
 				FEBD047625E25AA000511BFF /* AuthentificationViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEBD04A025E2CD4900511BFF /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				FEBD049925E2CC3900511BFF /* CoreDataStack.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		FEBD04A125E2CD5400511BFF /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				FEBD049C25E2CC9900511BFF /* Factory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		FEBD04A325E2CDBC00511BFF /* ImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FEBD049025E2A69300511BFF /* ImagesViewController.swift */,
+				FEBD049125E2A69300511BFF /* ImagesViewController.xib */,
+			);
+			path = ImageViewController;
 			sourceTree = "<group>";
 		};
 		FEDAFEE825DFCC2600A3641A /* Frameworks */ = {
@@ -212,7 +242,9 @@
 				FEBD047725E25AA000511BFF /* AuthentificationViewController.swift in Sources */,
 				FE92B9B125DD28CD0060C574 /* AppDelegate.swift in Sources */,
 				FE92B9CA25DD32680060C574 /* LoginViewController.swift in Sources */,
+				FEBD049A25E2CC3900511BFF /* CoreDataStack.swift in Sources */,
 				FE92B9B325DD28CD0060C574 /* SceneDelegate.swift in Sources */,
+				FEBD049D25E2CC9900511BFF /* Factory.swift in Sources */,
 				FE92B9CD25DD399D0060C574 /* GitHubConstants.swift in Sources */,
 				FEBD048025E2A4BD00511BFF /* CoreImage+CoreDataClass.swift in Sources */,
 				FEBD047C25E25EF900511BFF /* AuthService.swift in Sources */,

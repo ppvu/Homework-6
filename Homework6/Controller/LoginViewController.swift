@@ -38,11 +38,7 @@ private extension LoginViewController {
                                    localizedReason: reason) { [weak self] success, _ in
                 DispatchQueue.main.async {
                     if success {
-                        let alertController = UIAlertController(
-                            title: "Authentication complete",
-                            message: "Your attempt to login is succeeded", preferredStyle: .alert)
-                        alertController.addAction(UIAlertAction(title: "OK", style: .default))
-                        self?.present(alertController, animated: true)
+                        self?.toMain()
                     } else {
                         let alertController = UIAlertController(
                             title: "Authentication failed",
@@ -76,6 +72,15 @@ private extension LoginViewController {
         self.present(UINavigationController(rootViewController: authViewController),
                                             animated: true,
                                             completion: nil)
+    }
+    
+    func toMain() {
+        let imagesViewController = ImagesViewController(nibName: "ImagesViewController", bundle: nil)
+        let imagesNavigationController = UINavigationController(rootViewController: imagesViewController)
+
+        imagesNavigationController.modalPresentationStyle = .overFullScreen
+
+        present(imagesNavigationController, animated: true)
     }
 }
 
