@@ -24,6 +24,15 @@
 		FEBD049325E2A69300511BFF /* ImagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEBD049125E2A69300511BFF /* ImagesViewController.xib */; };
 		FEBD049A25E2CC3900511BFF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD049925E2CC3900511BFF /* CoreDataStack.swift */; };
 		FEBD049D25E2CC9900511BFF /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD049C25E2CC9900511BFF /* Factory.swift */; };
+		FEBD04AC25E3AE9E00511BFF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04AA25E3AE9E00511BFF /* Image.swift */; };
+		FEBD04AD25E3AE9E00511BFF /* Image.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEBD04AB25E3AE9E00511BFF /* Image.xib */; };
+		FEBD04B225E3B01E00511BFF /* UICollectionViewFetchedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04B125E3B01E00511BFF /* UICollectionViewFetchedResults.swift */; };
+		FEBD04B525E3B1D300511BFF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04B425E3B1D300511BFF /* API.swift */; };
+		FEBD04B925E3B86600511BFF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04B825E3B86600511BFF /* NetworkService.swift */; };
+		FEBD04BC25E3C01F00511BFF /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04BB25E3C01F00511BFF /* ImageData.swift */; };
+		FEBD04C025E3C16C00511BFF /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04BF25E3C16C00511BFF /* ImageInfo.swift */; };
+		FEBD04C425E3C1BD00511BFF /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04C325E3C1BD00511BFF /* NetworkErrors.swift */; };
+		FEBD04C725E3FFA700511BFF /* ImageDataForDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04C625E3FFA700511BFF /* ImageDataForDownload.swift */; };
 		FEDAFEEA25DFCC2600A3641A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDAFEE925DFCC2600A3641A /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +55,15 @@
 		FEBD049125E2A69300511BFF /* ImagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesViewController.xib; sourceTree = "<group>"; };
 		FEBD049925E2CC3900511BFF /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		FEBD049C25E2CC9900511BFF /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		FEBD04AA25E3AE9E00511BFF /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		FEBD04AB25E3AE9E00511BFF /* Image.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Image.xib; sourceTree = "<group>"; };
+		FEBD04B125E3B01E00511BFF /* UICollectionViewFetchedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewFetchedResults.swift; sourceTree = "<group>"; };
+		FEBD04B425E3B1D300511BFF /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FEBD04B825E3B86600511BFF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		FEBD04BB25E3C01F00511BFF /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		FEBD04BF25E3C16C00511BFF /* ImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
+		FEBD04C325E3C1BD00511BFF /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		FEBD04C625E3FFA700511BFF /* ImageDataForDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataForDownload.swift; sourceTree = "<group>"; };
 		FEDAFEE925DFCC2600A3641A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -82,16 +100,17 @@
 		FE92B9AF25DD28CD0060C574 /* Homework6 */ = {
 			isa = PBXGroup;
 			children = (
+				FEBD04BE25E3C07000511BFF /* Model */,
+				FEBD04A925E3AE6100511BFF /* Views */,
+				FEBD04A825E3ADD500511BFF /* Other */,
+				FEBD04A725E3ADBB00511BFF /* Services */,
+				FEBD04A625E3AD9800511BFF /* Storyboard */,
 				FEBD048425E2A52D00511BFF /* CoreData */,
-				FE92B9CC25DD399D0060C574 /* GitHubConstants.swift */,
+				FEBD048725E2A5F100511BFF /* Controllers */,
 				FE92B9B025DD28CD0060C574 /* AppDelegate.swift */,
 				FE92B9B225DD28CD0060C574 /* SceneDelegate.swift */,
-				FE92B9B625DD28CD0060C574 /* Main.storyboard */,
-				FEBD047B25E25EF900511BFF /* AuthService.swift */,
-				FEBD048725E2A5F100511BFF /* Controller */,
-				FE92B9BC25DD28D00060C574 /* Assets.xcassets */,
-				FE92B9BE25DD28D00060C574 /* LaunchScreen.storyboard */,
 				FE92B9C125DD28D00060C574 /* Info.plist */,
+				FE92B9BC25DD28D00060C574 /* Assets.xcassets */,
 				FE92B9B925DD28CD0060C574 /* Homework6.xcdatamodeld */,
 			);
 			path = Homework6;
@@ -116,14 +135,15 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		FEBD048725E2A5F100511BFF /* Controller */ = {
+		FEBD048725E2A5F100511BFF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				FEBD04A325E2CDBC00511BFF /* ImageViewController */,
 				FE92B9C925DD32680060C574 /* LoginViewController.swift */,
 				FEBD047625E25AA000511BFF /* AuthentificationViewController.swift */,
+				FEBD04B125E3B01E00511BFF /* UICollectionViewFetchedResults.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		FEBD04A025E2CD4900511BFF /* Stack */ = {
@@ -149,6 +169,53 @@
 				FEBD049125E2A69300511BFF /* ImagesViewController.xib */,
 			);
 			path = ImageViewController;
+			sourceTree = "<group>";
+		};
+		FEBD04A625E3AD9800511BFF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FE92B9B625DD28CD0060C574 /* Main.storyboard */,
+				FE92B9BE25DD28D00060C574 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FEBD04A725E3ADBB00511BFF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FEBD047B25E25EF900511BFF /* AuthService.swift */,
+				FEBD04B825E3B86600511BFF /* NetworkService.swift */,
+				FEBD04B425E3B1D300511BFF /* API.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FEBD04A825E3ADD500511BFF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				FE92B9CC25DD399D0060C574 /* GitHubConstants.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		FEBD04A925E3AE6100511BFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEBD04AA25E3AE9E00511BFF /* Image.swift */,
+				FEBD04AB25E3AE9E00511BFF /* Image.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FEBD04BE25E3C07000511BFF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEBD04BB25E3C01F00511BFF /* ImageData.swift */,
+				FEBD04BF25E3C16C00511BFF /* ImageInfo.swift */,
+				FEBD04C625E3FFA700511BFF /* ImageDataForDownload.swift */,
+				FEBD04C325E3C1BD00511BFF /* NetworkErrors.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FEDAFEE825DFCC2600A3641A /* Frameworks */ = {
@@ -224,6 +291,7 @@
 			files = (
 				FE92B9C025DD28D00060C574 /* LaunchScreen.storyboard in Resources */,
 				FE92B9BD25DD28D00060C574 /* Assets.xcassets in Resources */,
+				FEBD04AD25E3AE9E00511BFF /* Image.xib in Resources */,
 				FEBD049325E2A69300511BFF /* ImagesViewController.xib in Resources */,
 				FE92B9B825DD28CD0060C574 /* Main.storyboard in Resources */,
 			);
@@ -239,11 +307,19 @@
 				FE92B9BB25DD28CD0060C574 /* Homework6.xcdatamodeld in Sources */,
 				FEBD048125E2A4BD00511BFF /* CoreImage+CoreDataProperties.swift in Sources */,
 				FEBD049225E2A69300511BFF /* ImagesViewController.swift in Sources */,
+				FEBD04C025E3C16C00511BFF /* ImageInfo.swift in Sources */,
 				FEBD047725E25AA000511BFF /* AuthentificationViewController.swift in Sources */,
+				FEBD04B525E3B1D300511BFF /* API.swift in Sources */,
 				FE92B9B125DD28CD0060C574 /* AppDelegate.swift in Sources */,
 				FE92B9CA25DD32680060C574 /* LoginViewController.swift in Sources */,
+				FEBD04AC25E3AE9E00511BFF /* Image.swift in Sources */,
+				FEBD04B225E3B01E00511BFF /* UICollectionViewFetchedResults.swift in Sources */,
 				FEBD049A25E2CC3900511BFF /* CoreDataStack.swift in Sources */,
+				FEBD04C425E3C1BD00511BFF /* NetworkErrors.swift in Sources */,
+				FEBD04B925E3B86600511BFF /* NetworkService.swift in Sources */,
+				FEBD04C725E3FFA700511BFF /* ImageDataForDownload.swift in Sources */,
 				FE92B9B325DD28CD0060C574 /* SceneDelegate.swift in Sources */,
+				FEBD04BC25E3C01F00511BFF /* ImageData.swift in Sources */,
 				FEBD049D25E2CC9900511BFF /* Factory.swift in Sources */,
 				FE92B9CD25DD399D0060C574 /* GitHubConstants.swift in Sources */,
 				FEBD048025E2A4BD00511BFF /* CoreImage+CoreDataClass.swift in Sources */,

@@ -13,5 +13,5 @@ struct GithubConstants {
     static let REDIRECT_URI = "https://github.com/ppvu"
     static let SCOPE = "read:user,user:email,repo"
     static let TOKENURL = "https://github.com/login/oauth/access_token"
-    static let REPOURL = "https://github.com/ppvu/MemesForHomework"
+    static let REPOURL = "https://api.github.com/repos/ppvu/MemesForHomework/contents/"
 }

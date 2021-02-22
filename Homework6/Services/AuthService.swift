@@ -9,7 +9,8 @@ import Foundation
 import SwiftKeychainWrapper
 
 class AuthService {
-    public func githubRequestForAccessToken(authCode: String, completion: @escaping (Result<String, Error>) -> Void) {
+    public func githubRequestForAccessToken(authCode: String,
+                                            completion: @escaping (Result<String, Error>) -> Void) {
         let grantType = "authorization_code"
 
         let postParams = "grant_type=" + grantType + "&code=" + authCode + "&client_id=" + GithubConstants.CLIENT_ID + "&client_secret=" + GithubConstants.CLIENT_SECRET
