@@ -9,6 +9,9 @@ import Foundation
 import SwiftKeychainWrapper
 
 class AuthService {
+    
+    public var logOut: (() -> Void)?
+    
     public func githubRequestForAccessToken(authCode: String,
                                             completion: @escaping (Result<String, Error>) -> Void) {
         let grantType = "authorization_code"

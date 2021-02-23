@@ -14,6 +14,12 @@ class ImagesViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewLayout: UICollectionViewFlowLayout!
     
+    public var authService: AuthService?
+
+    private let context: NSManagedObjectContext = CoreDataStack.shared.container.viewContext
+//    private var dataSource: ImagesDataSource?
+    private var dataProvider: DataProvider?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Memes Library"
@@ -33,5 +39,6 @@ extension ImagesViewController {
     }
     
     @objc func logOut() {
+        
     }
 }

@@ -33,6 +33,7 @@
 		FEBD04C025E3C16C00511BFF /* ImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04BF25E3C16C00511BFF /* ImageInfo.swift */; };
 		FEBD04C425E3C1BD00511BFF /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04C325E3C1BD00511BFF /* NetworkErrors.swift */; };
 		FEBD04C725E3FFA700511BFF /* ImageDataForDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04C625E3FFA700511BFF /* ImageDataForDownload.swift */; };
+		FEBD04CB25E508E700511BFF /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04CA25E508E600511BFF /* DataProvider.swift */; };
 		FEDAFEEA25DFCC2600A3641A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDAFEE925DFCC2600A3641A /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		FEBD04BF25E3C16C00511BFF /* ImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInfo.swift; sourceTree = "<group>"; };
 		FEBD04C325E3C1BD00511BFF /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		FEBD04C625E3FFA700511BFF /* ImageDataForDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataForDownload.swift; sourceTree = "<group>"; };
+		FEBD04CA25E508E600511BFF /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		FEDAFEE925DFCC2600A3641A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -186,6 +188,7 @@
 				FEBD047B25E25EF900511BFF /* AuthService.swift */,
 				FEBD04B825E3B86600511BFF /* NetworkService.swift */,
 				FEBD04B425E3B1D300511BFF /* API.swift */,
+				FEBD04CA25E508E600511BFF /* DataProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				FE92B9BB25DD28CD0060C574 /* Homework6.xcdatamodeld in Sources */,
 				FEBD048125E2A4BD00511BFF /* CoreImage+CoreDataProperties.swift in Sources */,
 				FEBD049225E2A69300511BFF /* ImagesViewController.swift in Sources */,
+				FEBD04CB25E508E700511BFF /* DataProvider.swift in Sources */,
 				FEBD04C025E3C16C00511BFF /* ImageInfo.swift in Sources */,
 				FEBD047725E25AA000511BFF /* AuthentificationViewController.swift in Sources */,
 				FEBD04B525E3B1D300511BFF /* API.swift in Sources */,

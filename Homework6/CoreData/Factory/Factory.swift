@@ -7,11 +7,6 @@
 
 import CoreData
 
-struct ImageData {
-    let name: String
-    let data: Data
-}
-
 class Factory {
     static private var stack = CoreDataStack.shared
     static private var container = stack.container
@@ -27,7 +22,7 @@ enum FactoryError: Error {
 
 extension Factory {
     public static func makeImage(
-        with imageData: ImageData,
+        with imageData: ImageDataForDownload,
         completion: ((Result<CoreImage, FactoryError>) -> Void)? = nil) {
 
         let context = container.newBackgroundContext()

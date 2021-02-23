@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var GitHubLoginButton: UIButton!
     let token = KeychainWrapper.standard.string(forKey: "token")
+    var authService: AuthService?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +64,11 @@ private extension LoginViewController {
             return
         }
         biometricsLogin()
+    }
+    
+    func logout() {
+        KeychainWrapper.standard.removeObject(forKey: "token")
+        authService?.logOut!()
     }
     
     func authentification() {
