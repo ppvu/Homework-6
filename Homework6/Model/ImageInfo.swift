@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ImageInfo {
+struct ImageInfo: Codable {
     let name: String
     let downloadURL: String
     let sha: String

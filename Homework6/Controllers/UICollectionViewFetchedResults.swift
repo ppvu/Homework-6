@@ -60,8 +60,7 @@ class UICollectionViewFetchedResultsController<T: NSFetchRequestResult>: NSObjec
     }
     
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        
-        // ios11 crash fix
+
         guard collectionView.window != nil else {
             collectionView.reloadData()
             cleanupChangeLog()

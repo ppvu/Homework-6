@@ -9,14 +9,13 @@ import Foundation
 
 struct ImageDataModel: Codable {
     
-    var name: String
-    var data: Data?
-    var sha: String
-    var downloadURL: String
+    let type: String
+    let name: String
+    let sha: String
+    let downloadURL: String?
 
     enum CodingKeys: String, CodingKey {
-        case sha
-        case name
+        case type, name, sha
         case downloadURL = "download_url"
     }
 }
