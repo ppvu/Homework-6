@@ -93,8 +93,10 @@ extension AuthentificationViewController: WKNavigationDelegate {
         AuthService().githubRequestForAccessToken(authCode: authCode) { [weak self] result in
             switch result {
             case .success(let token):
-                self?.dismiss(animated: true) {
-                    self?.delegate?.handleAccessToken(accessToken: token)
+                DispatchQueue.main.async {
+                    self?.dismiss(animated: true) {
+                        self?.delegate?.handleAccessToken(accessToken: token)
+                    }
                 }
             case .failure(let error):
                 print(error)

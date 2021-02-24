@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7953879725E6564600DA6EF0 /* FullScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7953879625E6564600DA6EF0 /* FullScreenViewController.xib */; };
 		FE92B9B125DD28CD0060C574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE92B9B025DD28CD0060C574 /* AppDelegate.swift */; };
 		FE92B9B325DD28CD0060C574 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE92B9B225DD28CD0060C574 /* SceneDelegate.swift */; };
 		FE92B9B825DD28CD0060C574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE92B9B625DD28CD0060C574 /* Main.storyboard */; };
@@ -34,10 +35,16 @@
 		FEBD04C425E3C1BD00511BFF /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04C325E3C1BD00511BFF /* NetworkErrors.swift */; };
 		FEBD04C725E3FFA700511BFF /* ImageDataForDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04C625E3FFA700511BFF /* ImageDataForDownload.swift */; };
 		FEBD04CB25E508E700511BFF /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04CA25E508E600511BFF /* DataProvider.swift */; };
+		FEBD04CE25E527E000511BFF /* ImagesFetchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04CD25E527E000511BFF /* ImagesFetchResultsController.swift */; };
+		FEBD04D125E5284200511BFF /* ImagesDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04D025E5284200511BFF /* ImagesDataSourse.swift */; };
+		FEBD04D425E528A300511BFF /* CollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04D325E528A300511BFF /* CollectionViewDelegate.swift */; };
+		FEBD04D725E52BDB00511BFF /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04D625E52BDB00511BFF /* UIResponder.swift */; };
+		FEBD04DA25E52E4B00511BFF /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBD04D925E52E4B00511BFF /* FullScreenViewController.swift */; };
 		FEDAFEEA25DFCC2600A3641A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDAFEE925DFCC2600A3641A /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7953879625E6564600DA6EF0 /* FullScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FullScreenViewController.xib; sourceTree = "<group>"; };
 		FE92B9AD25DD28CD0060C574 /* Homework6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE92B9B025DD28CD0060C574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE92B9B225DD28CD0060C574 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +73,11 @@
 		FEBD04C325E3C1BD00511BFF /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		FEBD04C625E3FFA700511BFF /* ImageDataForDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataForDownload.swift; sourceTree = "<group>"; };
 		FEBD04CA25E508E600511BFF /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		FEBD04CD25E527E000511BFF /* ImagesFetchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesFetchResultsController.swift; sourceTree = "<group>"; };
+		FEBD04D025E5284200511BFF /* ImagesDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesDataSourse.swift; sourceTree = "<group>"; };
+		FEBD04D325E528A300511BFF /* CollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDelegate.swift; sourceTree = "<group>"; };
+		FEBD04D625E52BDB00511BFF /* UIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder.swift; sourceTree = "<group>"; };
+		FEBD04D925E52E4B00511BFF /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
 		FEDAFEE925DFCC2600A3641A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -169,6 +181,11 @@
 			children = (
 				FEBD049025E2A69300511BFF /* ImagesViewController.swift */,
 				FEBD049125E2A69300511BFF /* ImagesViewController.xib */,
+				FEBD04CD25E527E000511BFF /* ImagesFetchResultsController.swift */,
+				FEBD04D025E5284200511BFF /* ImagesDataSourse.swift */,
+				FEBD04D325E528A300511BFF /* CollectionViewDelegate.swift */,
+				FEBD04D925E52E4B00511BFF /* FullScreenViewController.swift */,
+				7953879625E6564600DA6EF0 /* FullScreenViewController.xib */,
 			);
 			path = ImageViewController;
 			sourceTree = "<group>";
@@ -185,8 +202,8 @@
 		FEBD04A725E3ADBB00511BFF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				FEBD047B25E25EF900511BFF /* AuthService.swift */,
 				FEBD04B825E3B86600511BFF /* NetworkService.swift */,
+				FEBD047B25E25EF900511BFF /* AuthService.swift */,
 				FEBD04B425E3B1D300511BFF /* API.swift */,
 				FEBD04CA25E508E600511BFF /* DataProvider.swift */,
 			);
@@ -197,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				FE92B9CC25DD399D0060C574 /* GitHubConstants.swift */,
+				FEBD04D625E52BDB00511BFF /* UIResponder.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -297,6 +315,7 @@
 				FEBD04AD25E3AE9E00511BFF /* Image.xib in Resources */,
 				FEBD049325E2A69300511BFF /* ImagesViewController.xib in Resources */,
 				FE92B9B825DD28CD0060C574 /* Main.storyboard in Resources */,
+				7953879725E6564600DA6EF0 /* FullScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +330,12 @@
 				FEBD048125E2A4BD00511BFF /* CoreImage+CoreDataProperties.swift in Sources */,
 				FEBD049225E2A69300511BFF /* ImagesViewController.swift in Sources */,
 				FEBD04CB25E508E700511BFF /* DataProvider.swift in Sources */,
+				FEBD04D125E5284200511BFF /* ImagesDataSourse.swift in Sources */,
+				FEBD04DA25E52E4B00511BFF /* FullScreenViewController.swift in Sources */,
 				FEBD04C025E3C16C00511BFF /* ImageInfo.swift in Sources */,
 				FEBD047725E25AA000511BFF /* AuthentificationViewController.swift in Sources */,
 				FEBD04B525E3B1D300511BFF /* API.swift in Sources */,
+				FEBD04D725E52BDB00511BFF /* UIResponder.swift in Sources */,
 				FE92B9B125DD28CD0060C574 /* AppDelegate.swift in Sources */,
 				FE92B9CA25DD32680060C574 /* LoginViewController.swift in Sources */,
 				FEBD04AC25E3AE9E00511BFF /* Image.swift in Sources */,
@@ -323,7 +345,9 @@
 				FEBD04B925E3B86600511BFF /* NetworkService.swift in Sources */,
 				FEBD04C725E3FFA700511BFF /* ImageDataForDownload.swift in Sources */,
 				FE92B9B325DD28CD0060C574 /* SceneDelegate.swift in Sources */,
+				FEBD04D425E528A300511BFF /* CollectionViewDelegate.swift in Sources */,
 				FEBD04BC25E3C01F00511BFF /* ImageDataModel.swift in Sources */,
+				FEBD04CE25E527E000511BFF /* ImagesFetchResultsController.swift in Sources */,
 				FEBD049D25E2CC9900511BFF /* Factory.swift in Sources */,
 				FE92B9CD25DD399D0060C574 /* GitHubConstants.swift in Sources */,
 				FEBD048025E2A4BD00511BFF /* CoreImage+CoreDataClass.swift in Sources */,
@@ -477,6 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9MDS32W273;
 				INFOPLIST_FILE = Homework6/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,6 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9MDS32W273;
 				INFOPLIST_FILE = Homework6/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

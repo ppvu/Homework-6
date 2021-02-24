@@ -8,14 +8,13 @@
 import Foundation
 import SwiftKeychainWrapper
 
+
 class AuthService {
-    
-    public var logOut: (() -> Void)?
-    
+
     public func githubRequestForAccessToken(authCode: String,
                                             completion: @escaping (Result<String, Error>) -> Void) {
         let grantType = "authorization_code"
-
+        
         let postParams = "grant_type=" + grantType + "&code=" + authCode + "&client_id=" + GithubConstants.CLIENT_ID + "&client_secret=" + GithubConstants.CLIENT_SECRET
         let postData = postParams.data(using: String.Encoding.utf8)
         let request = NSMutableURLRequest(url: URL(string: GithubConstants.TOKENURL)!)
@@ -28,9 +27,13 @@ class AuthService {
             if statusCode == 200 {
                 let results = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [AnyHashable: Any]
                 let accessToken = results?["access_token"] as! String
-                KeychainWrapper.standard.set(accessToken, forKey: "token")
+                print(accessToken)
+                completion(.success(accessToken))
+            } else {
+                completion(.failure(NetworkErrors.invalidStatusCode))
             }
         }
         task.resume()
     }
+    
 }

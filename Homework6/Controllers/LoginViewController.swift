@@ -14,7 +14,6 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var GitHubLoginButton: UIButton!
     let token = KeychainWrapper.standard.string(forKey: "token")
-    var authService: AuthService?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +67,6 @@ private extension LoginViewController {
     
     func logout() {
         KeychainWrapper.standard.removeObject(forKey: "token")
-        authService?.logOut!()
     }
     
     func authentification() {
@@ -82,6 +80,7 @@ private extension LoginViewController {
     
     func toMain() {
         let imagesViewController = ImagesViewController(nibName: "ImagesViewController", bundle: nil)
+        imagesViewController.logoutCallback = logout
         let imagesNavigationController = UINavigationController(rootViewController: imagesViewController)
 
         imagesNavigationController.modalPresentationStyle = .overFullScreen
@@ -92,6 +91,8 @@ private extension LoginViewController {
 
 extension LoginViewController: AuthentificationDelegate {
     func handleAccessToken(accessToken: String) {
+        KeychainWrapper.standard.set(accessToken, forKey: "token")
+        toMain()
     }
 }
 

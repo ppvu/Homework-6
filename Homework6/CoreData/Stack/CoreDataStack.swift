@@ -20,11 +20,7 @@ class CoreDataStack {
     }()
     
     lazy var container: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "Memes Library")
-        
-        let description = NSPersistentStoreDescription()
-        description.type = NSInMemoryStoreType
-        container.persistentStoreDescriptions = [description]
+        let container = NSPersistentContainer(name: "Homework6")
 
         container.loadPersistentStores(completionHandler: { (_, error) in
             container.viewContext.automaticallyMergesChangesFromParent = true

@@ -52,7 +52,7 @@ class API {
         
         let headers: [String: String] = ["Authorization": "Bearer \(token)", "Accept": "application/json"]
         
-        NetworkService.makePostRequest(urlString: url, headers: headers) { result in
+        NetworkService.makeGetRequest(url: url, headers: headers) { result in
             switch result {
             case .success(let data):
                 guard let items = try? JSONDecoder().decode([ImageDataModel].self, from: data) else {
@@ -75,7 +75,7 @@ class API {
                 let imageData = items.filter { content in
                     if content.type == "file",
                        let ext = content.name.split(separator: ".").last,
-                       imageFormats.contains(String(ext)) {
+                       imageFormats.contains(String(ext).lowercased()) {
                         return true
                     }
                     return false
